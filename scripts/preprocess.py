@@ -3,7 +3,7 @@ import spacy
 from config.config import RAW_CSV_PATH, CLEAN_CSV_PATH
 
 # Load SpaCy English model
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_lg")
 
 # Load raw reviews
 df = pd.read_csv(RAW_CSV_PATH)
