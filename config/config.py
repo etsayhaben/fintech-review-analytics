@@ -19,16 +19,17 @@ APP_IDS = {
     "CBE": "com.combanketh.mobilebanking",
     "BOA": "com.boa.boaMobileBanking",
     "DASHEN": "com.dashen.dashensuperapp",
+   
 }
 
 # ---------- DATABASE CONFIG ----------
 POSTGRES = {
-    "host": os.getenv("DB_HOST", "localhost"),
-    "port": int(os.getenv("DB_PORT", 5432)),
-    "db": os.getenv("DB_NAME", "bank_reviews"),
-    "user": os.getenv("DB_USER", "postgres"),
-    "password": os.getenv("DB_PASSWORD", ""),
-    "sslmode": os.getenv("DB_SSLMODE", "require")
+    "host": os.getenv("POSTGRES_HOST", "localhost"),
+    "port": int(os.getenv("POSTGRES_PORT", 5432)),
+    "db": os.getenv("POSTGRES_DB", "bank_reviews"),
+    "user": os.getenv("POSTGRES_USER", "postgres"),
+    "password": os.getenv("POSTGRES_PASSWORD", ""),
+    "sslmode": os.getenv("POSTGRES_SSLMODE", "require")
 }
 
 # ---------- PROJECT CONSTANTS ----------
